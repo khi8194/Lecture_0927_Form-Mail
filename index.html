@@ -12,22 +12,35 @@
 </head>
 
 <body>
-  <form id="contact-form">
-    <!-- To simplify the tutorial, the value is static. -->
-    <input type="hidden" name="contact_number" value="697483" />
+  <section>
+    <h1>CONTACT</h1>
 
-    <label for="uName">Name(문의자 성함)</label>
-    <input type="text" name="user_name" id="uName" />
+    <form id="contact-form">
+      <!-- To simplify the tutorial, the value is static. -->
+      <input type="hidden" name="contact_number" value="697483" />
 
-    <label for="uEmail">Email(답변받을 이메일)</label>
-    <input type="email" name="user_email" id="uEmail" />
+      <div>
+        <label for="uName">NAME</label>
+        <input type="text" name="user_name" id="uName" />
+      </div>
 
-    <label for="msg">Message(문의 내용)</label>
-    <textarea name="message" id="msg"></textarea>
+      <div>
+        <label for="uEmail">EMAIL</label>
+        <input type="email" name="user_email" id="uEmail" />
+      </div>
 
-    <input type="reset" value="Reset" />
-    <input type="submit" value="Send" />
-  </form>
+      <div class="msgBox">
+        <label for="msg">LEAVE A MESSAGE</label>
+        <textarea name="message" id="msg"></textarea>
+      </div>
+
+      <nav>
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Send" />
+      </nav>
+    </form>
+
+  </section>
 </body>
 
 </html>
