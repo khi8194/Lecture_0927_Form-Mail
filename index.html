@@ -14,14 +14,19 @@
 <body>
   <form id="contact-form">
     <!-- To simplify the tutorial, the value is static. -->
-    <input type="hidden" name="contact_number" value="697483">
-    <label>Name</label>
-    <input type="text" name="user_name">
-    <label>Email</label>
-    <input type="email" name="user_email">
-    <label>Message</label>
-    <textarea name="message"></textarea>
-    <input type="submit" value="Send">
+    <input type="hidden" name="contact_number" value="697483" />
+
+    <label for="uName">Name(문의자 성함)</label>
+    <input type="text" name="user_name" id="uName" />
+
+    <label for="uEmail">Email(답변받을 이메일)</label>
+    <input type="email" name="user_email" id="uEmail" />
+
+    <label for="msg">Message(문의 내용)</label>
+    <textarea name="message" id="msg"></textarea>
+
+    <input type="reset" value="Reset" />
+    <input type="submit" value="Send" />
   </form>
 </body>
 
